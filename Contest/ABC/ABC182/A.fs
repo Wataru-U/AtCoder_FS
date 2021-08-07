@@ -1,0 +1,1 @@
+stdin.ReadLine().Split() |> Array.map int |> (fun x ->  2 * x.[0] + 100 - x.[1]) |> printfn "%d"

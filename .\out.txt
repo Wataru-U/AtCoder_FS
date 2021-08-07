@@ -1,0 +1,456 @@
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = 
+    System.IO.Path.Combine(@".\out.txt")
+    |> System.IO.StreamWriter
+    |> System.Console.SetOut
+for i in 1..1000 do
+    stdin.ReadLine().Split()
+    |> fun x -> printfn "%s %s %s %s" x.[0] x.[1] x.[2] x.[3]
+    sw.WriteLine(100);;
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = 
+    System.IO.Path.Combine(@".\out.txt")
+    |> System.IO.StreamWriter false enc
+for i in 1..1000 do
+    stdin.ReadLine().Split()
+    |> fun x -> printfn "%s %s %s %s" x.[0] x.[1] x.[2] x.[3]
+    sw.WriteLine(100);;
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = 
+    let fp = System.IO.Path.Combine(@".\out.txt")
+    new System.IO.StreamWriter( fp, false, enc)
+for i in 1..1000 do
+    stdin.ReadLine().Split()
+    |> fun x -> printfn "%s %s %s %s" x.[0] x.[1] x.[2] x.[3]
+    sw.WriteLine(100);;
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = 
+    let fp = System.IO.Path.Combine(@".\out.txt")
+    new System.IO.StreamWriter( fp, false, Encoding.GetEncoding("Shift_JIS"))
+for i in 1..1000 do
+    stdin.ReadLine().Split()
+    |> fun x -> printfn "%s %s %s %s" x.[0] x.[1] x.[2] x.[3]
+    sw.WriteLine(100);;
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = 
+    let fp = System.IO.Path.Combine(@".\out.txt")
+    new System.IO.StreamWriter( fp, false, Encoding.GetEncoding("Shift_JIS"))
+for i in 1..1000 do
+    stdin.ReadLine().Split()
+    |> fun x -> sw.WriteLine "%s %s %s %s" x.[0] x.[1] x.[2] x.[3]
+    sw.WriteLine(100);;
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = 
+    let fp = System.IO.Path.Combine(@".\out.txt")
+    new System.IO.StreamWriter( fp, false, Encoding.GetEncoding("Shift_JIS"))
+for i in 1..1000 do
+    stdin.ReadLine().Split()
+    |> fun x -> sw.WriteLine ("%s %s %s %s",x.[0] ,x.[1], x.[2] ,x.[3])
+    sw.WriteLine(100);;
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = 
+    let fp = System.IO.Path.Combine(@".\out.txt")
+    new System.IO.StreamWriter( fp, false, Encoding.GetEncoding("Shift_JIS"));;
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let enc = Encoding.GetEncoding("Shift_JIS");
+
+let writer = new StreamWriter(@"out.txt", false, enc);
+;;
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn;;
+let enc = Encoding.GetEncoding("Shift_JIS");
+let writer = new StreamWriter(@"out.txt", false, enc);
+;;
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = new StreamWriter("out.txt");;
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let rec toStr (x:int[]) n v= 
+    if n = x.Length-1 then (v + (x.[n]|>string))
+    else toStr x (n + 1) (v + (x.[n]|>string) + " ")
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = new StreamWriter("out.txt")
+for i in 1..1000 do
+    stdin.ReadLine()
+    |> sw.WriteLine 
+    sw.WriteLine(100)
+sw.Close();;;
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let rec toStr (x:int[]) n v= 
+    if n = x.Length-1 then (v + (x.[n]|>string))
+    else toStr x (n + 1) (v + (x.[n]|>string) + " ")
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+- let sw = new StreamWriter("out.txt")
+for i in 1..1000 do
+    stdin.ReadLine()
+    |> sw.WriteLine 
+    sw.WriteLine(100)
+sw.Close();;;
+open System;
+open System.Collections.Generic;
+open System.Linq;
+open System.Text;
+open System.IO;
+
+let rec toStr (x:int[]) n v= 
+    if n = x.Length-1 then (v + (x.[n]|>string))
+    else toStr x (n + 1) (v + (x.[n]|>string) + " ")
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+- let sw = new StreamWriter("out.txt")
+for i in 1..1000 do
+    stdin.ReadLine()
+    |> sw.WriteLine 
+    sw.WriteLine(100)
+sw.Close();;
+open System
+open System.Collections.Generic
+open System.Linq
+open System.Text
+open System.IO
+
+let rec toStr (x:int[]) n v= 
+    if n = x.Length-1 then (v + (x.[n]|>string))
+    else toStr x (n + 1) (v + (x.[n]|>string) + " ")
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = new StreamWriter("out.txt")
+for i in 1..1000 do
+    stdin.ReadLine()
+    |> sw.WriteLine 
+    sw.WriteLine 100
+sw.Close();;
+open System
+open System.Collections.Generic
+open System.Linq
+open System.Text
+open System.IO
+
+let rec toStr (x:int[]) n v= 
+    if n = x.Length-1 then (v + (x.[n]|>string))
+    else toStr x (n + 1) (v + (x.[n]|>string) + " ")
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = new StreamWriter("out.txt")
+for i in 1..1000 do
+    stdin.ReadLine().Split()
+    |> toStr
+    |> sw.WriteLine 
+    sw.WriteLine 100
+sw.Close();;
+open System
+open System.Collections.Generic
+open System.Linq
+open System.Text
+open System.IO
+
+let rec toStr (x:int[]) n v= 
+    if n = x.Length-1 then (v + (x.[n]|>string))
+    else toStr x (n + 1) (v + (x.[n]|>string) + " ")
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = new StreamWriter("out.txt")
+for i in 1..1000 do
+    stdin.ReadLine().Split()
+    |> fun x -> x.[..3]
+    |> Array.map int
+    |> toStr
+    |> sw.WriteLine 
+    sw.WriteLine 100
+sw.Close();;
+open System
+open System.Collections.Generic
+open System.Linq
+open System.Text
+open System.IO
+
+let rec toStr (x:int[]) n v= 
+    if n = x.Length-1 then (v + (x.[n]|>string))
+    else toStr x (n + 1) (v + (x.[n]|>string) + " ")
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = new StreamWriter("out.txt")
+for i in 1..1000 do
+    stdin.ReadLine().Split()
+    |> fun x -> x.[..3]
+    |> Array.map int
+    |> toStr 0 ""
+    |> sw.WriteLine 
+    sw.WriteLine 100
+sw.Close();;
+open System
+open System.Collections.Generic
+open System.Linq
+open System.Text
+open System.IO
+
+let rec toStr (x:int[]) n v= 
+    if n = x.Length-1 then (v + (x.[n]|>string))
+    else toStr x (n + 1) (v + (x.[n]|>string) + " ")
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = new StreamWriter("out.txt")
+for i in 1..1000 do
+    stdin.ReadLine().Split()
+    |> fun x -> x.[..3]
+    |> Array.map int
+    |> fun x -> toStr 0 ""
+    |> sw.WriteLine 
+    sw.WriteLine 100
+sw.Close();;
+open System
+open System.Collections.Generic
+open System.Linq
+open System.Text
+open System.IO
+
+let rec toStr (x:int[]) n v= 
+    if n = x.Length-1 then (v + (x.[n]|>string))
+    else toStr x (n + 1) (v + (x.[n]|>string) + " ")
+
+let exStdIn = new System.IO.StreamReader( "test.txt" )
+exStdIn |> System.Console.SetIn
+let sw = new StreamWriter("out.txt")
+for i in 1..1000 do
+    stdin.ReadLine().Split()
+    |> fun x -> x.[..3]
+    |> Array.map int
+    |> fun x -> toStr x 0 ""
+    |> sw.WriteLine 
+    sw.WriteLine 100
+sw.Close();;
+# 1 @"/Users/umezawa/Desktop/AtcoderFolder/FS/AHC/AHC003/A.fs"
+;;
+open System
+open System.IO
+open System.Collections
+open System.Collections.Generic
+
+let rec toStr (x:int[]) n v= 
+    if n = x.Length then v
+    else toStr x (n + 1) (v + " " + (x.[n]|>string))
+
+let exStdIn = new System.IO.StreamReader( "out.txt" )
+exStdIn |> System.Console.SetIn
+// 出力の準備
+let sw =
+    new StreamWriter(Console.OpenStandardOutput())
+    |> fun x -> x.AutoFlush <- false; x
+Console.SetOut(sw)
+
+let Print (x:string) =
+    x |> stdout.WriteLine
+    stdout.Flush ()
+
+//配列の要素がnullだと怒られるので代わりになるものを入れておく
+type PriorityQueue<'T when 'T :> IComparable>(capacity: int, _null: 'T, comp: 'T -> 'T -> bool) = 
+    let mutable (array: 'T[]) = [|for i in 1..capacity -> _null|]
+    let mutable length = 0
+    let parent index = (index - 1) / 2
+
+    let swap a b = 
+        let c = array.[b]
+        array.[b] <- array.[a]
+        array.[a] <- c
+
+    let rec push index = 
+        let P = parent index
+        match index with
+        | 0 -> ()
+        | _ -> 
+            match comp array.[index] array.[P] with
+            | false -> ()
+            | _ ->
+                swap index (P)
+                push (index-1)
+   
+    let rec pop index = 
+        if index >= length ||  (index * 2 + 1) >= capacity
+            then ()
+            else
+                //優先度が高いほうにする
+                let child = 
+                    if comp array.[index * 2 + 1] array.[(index + 1) * 2] 
+                        then index * 2 + 1 
+                        else (index + 1) * 2
+                if comp array.[child] array.[index] && child < length
+                    then
+                        swap child index
+                        pop child
+                    else ()
+
+    member this.Length = length
+
+    member this.Push v = 
+        let index = length
+        array.[index] <- v
+        push index
+        length <- length+1
+        
+     
+    member this.Pop = 
+        swap (length-1) 0
+        length <- length-1
+        pop 0
+        array.[length]
+
+
+type Vertex(index:int, cost:float, prev:string)= 
+    member this.Index = index
+    member this.Cost = cost
+    member this.Prev = prev
+
+    static member nullMin = Vertex(0,1000000000000000.,"")
+    static member nullMAx = Vertex(0,-1000000000000000.,"")
+
+    static member max (a:Vertex) (b:Vertex) =  a > b 
+    static member min (a:Vertex) (b:Vertex) =  a < b 
+
+    interface IComparable with
+        member this.CompareTo yobj = 
+            match yobj with
+            | :? Vertex as x -> compare this.Cost x.Cost
+            | _ -> invalidArg "yobj" "cannot compare value of different types"
+
+let _null = Vertex(0,100000000.,"")
+
+type Edge(index:int) =
+    let mutable cost = 1.
+    
+    member this.Cost = cost
+    member this.To = index
+    member this.CostUpdate v = cost <- v
+
+
+type Dijkstra () =
+    let idx v = 
+        [| (v/30); (v%30)|]
+    let toNum i j = 
+        i * 30 + j
+    let mutable graph = 
+        [|for i in 0..29 -> 
+            [|for j in 0..29 -> 
+                [|
+                    Edge((if i = 0 then -1 else ((i - 1) * 30 + j)));
+                    Edge((if i = 29 then -1 else ((i + 1) * 30 + j)));
+                    Edge((if j = 0 then -1 else ((i) * 30 + j-1)));
+                    Edge((if j = 29 then -1 else ((i) * 30 + j+1)));
+                |] 
+            |] 
+        |]
+    
+    let Dir v = 
+        match v with
+        | 0 -> "U"
+        | 1 -> "D"
+        | 2 -> "L"
+        | _ -> "R"
+    
+    let Dir2Num v = 
+        match v with
+        | "U" -> 0
+        | "D" -> 1
+        | "L" -> 2
+        | _ -> 3
+    
+    let CostUpdate i j d v = 
+        graph.[i].[j].[d].CostUpdate v
+
+    let Sarch start = 
+        let mutable PQ = PriorityQueue<Vertex>(1000,Vertex.nullMin,Vertex.min)
+        let mutable town = [|for i in 1 .. 900 -> Vertex(i,-1.,"")|]
+        town.[start] <- Vertex(start,0.,"")
+        PQ.Push (town.[start])
+        while (PQ.Length <> 0) do
+            let v = PQ.Pop
+            let pos = idx v.Index
+            let i = pos.[0]
+      
