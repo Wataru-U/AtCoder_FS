@@ -68,8 +68,10 @@ let mutable ans = []
 
 let cd_left = [|for i in 0..N -> []|]
 
+let cd_right = [|for i in 0..N -> []|]
 for item in Conditions do
     cd_left.[item.[0]] <- item.[1] :: cd_left.[item.[0]]
+    cd_right.[item.[1]] <- item.[0] :: cd_right.[item.[1]]
 let seen = [|for i in cd_right -> i.Length|]
 
 let PQ = PriorityQueue(N*2)
