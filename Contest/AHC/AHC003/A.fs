@@ -206,7 +206,7 @@ type Dijkstra () =
             CostUpdate i j ad  v
             update town x y ni nj v
 
-           
+
     member this.Culc (x:int[]) = 
         let start =  toNum x.[0] x.[1]
         let End = toNum x.[2] x.[3]
